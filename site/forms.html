@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <p>
+        <form action="/lol">
+            <div>
+                <label for="username">Enter a username</label>
+                <input type="text" placeholder="username" name="username" id="username">
+            </div>
+            <div>
+                <label for="password">Your password</label>
+                <input type="password" placeholder="password" name="pwd" id="password">
+            </div>
+            <div>
+                <label for="color">You favorite color</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <div>
+                <label for="number">Your favorite number</label>
+                <input type="number" name="num" id="number" min="1" max="10">
+            </div>
+            <button>Submit</button>
+            <button type="button">I'm a normal button</button>
+            <input type="submit" value="I'm a spare Submit button">
+        </form>
+    </p>
+    <hr>
+    <p>
+        <h2>External websites search</h2>
+
+        <h3>Google</h3>
+        <form action="https://www.google.com/search">
+            <input type="text" name="q">
+            <button>Search Google</button>
+        </form>
+
+        <h3>YouTube</h3>
+        <form action="https://www.youtube.com/results">
+            <input type="text" name="search_query">
+            <button>Search YouTube</button>
+        </form>
+    </p>
+    <hr>
+    <p>
+        <h2>More inputs</h2>
+        <form action="/chicks">
+            <input type="checkbox" name="agree" id="agree" checked>
+            <label for="agree">I agree</label>
+            <button>Submit</button>
+        </form>
+
+        <form action="/chicken">
+            <p>
+                <label for="xs">XS</label>
+                <input type="radio" name="size" id="xs" value="xs">
+                <label for="s">S</label>
+                <input type="radio" name="size" id="s" value="s">
+                <label for="M">M</label>
+                <input type="radio" name="size" id="m" value="m">
+            </p>
+            <p>
+                <label for="meal">Select your meal</label>
+                <select name="meal" id="meal">
+                    <option value="fish">Fish</option>
+                    <option value="Meat">Meat</option>
+                    <option value="vegan">Vegan</option>
+                </select>
+            </p>
+            <p>
+                <label for="cheese">How much cheese do you want</label>
+                <input type="range" id="cheese" name="cheese level" min="1" max="5" step="0.5">
+            </p>
+            <p>
+                <label for="suggest">Any requests or suggestions?</label>
+                <textarea name="suggest" id="suggest" cols="30" rows="5" placeholder="Type your requests here"></textarea>
+            </p>
+            <button>Submit</button>
+        </form>
+    </p>
+    <hr>
+    <p>
+        <h2>Validations Form</h2>
+        <form action="/dummy">
+            <label for="first">Enter your first name</label>
+            <input type="text" name="first" id="first" required>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" minlength="5" maxlength="15" required>
+            <button>Submit the form</button>
+        </form>
+    </p>
+
+</body>
+
+</html>

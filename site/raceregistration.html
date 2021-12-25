@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race registration</title>
+</head>
+
+<body>
+
+    <head>
+        <h1>Race Registration Form</h1>
+    </head>
+    <main>
+        <form action="/dummy">
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" required>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+            <div>
+                <p>Select a Race</p>
+                <div>
+                    <input type="radio" id="funrun" name="race" value="funrun">
+                    <label for="funrun">Fun Run 5k</label>
+                </div>
+                <div>
+                    <input type="radio" id="half" name="race" value="half">
+                    <label for="half">Half Marathon</label>
+                </div>
+                <div>
+                    <input type="radio" id="full" name="race" value="full">
+                    <label for="full">Full Marathon</label>
+                </div>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="pwd">Password</label>
+                <input type="password" name="pwd" id="pwd" required>
+            </div>
+            <div>
+                <label for="age">Select age group</label>
+                <select name="age" id="age">
+                    <option value="under18">Under 18</option>
+                    <option value="18-30">18-30</option>
+                    <option value="30-50">30-50</option>
+                    <option value="over50">50+</option>
+                </select>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
